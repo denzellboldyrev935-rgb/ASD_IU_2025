@@ -1,4 +1,4 @@
- a/*
+/*
 Обязательное задание.
 Релизовать алгоритм бинарного поиска двумя способами:
 1) через цикл
@@ -21,17 +21,17 @@ public class Binsearch {
         if (resultIter == -1) {
             System.out.println("Элемент не найден");
         } else {
-            System.out.println("Элемент найден(итеративный метод),индекс: " + resultIter);
+            System.out.println("Элемент найден (итеративный метод),индекс: " + resultIter);
         }
 
         int resultRec = searchRecursive(arr, el, 0, arr.length - 1);
         if (resultRec == -1) {
             System.out.println("Элемент не найден");
         } else {
-            System.out.println("Элемент найден,(рекурсивный метод), индекс: " + resultRec);
+            System.out.println("Элемент найден (рекурсивный метод), индекс: " + resultRec);
         }
     }
-    public static int searchIterative(int[] arr, int el) {
+    private static int searchIterative(int[] arr, int el) {
         int left = 0;
         int right = arr.length - 1;
         while (left <= right) {
@@ -46,7 +46,7 @@ public class Binsearch {
         }
         return -1;
     }
-    public static int searchRecursive(int[] arr, int el, int left, int right) {
+    private static int searchRecursive(int[] arr, int el, int left, int right) {
         if (left > right) {
             return -1;
         }

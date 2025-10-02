@@ -14,7 +14,7 @@ public class Task4 {
         int res = findNumber(arr);
         System.out.println("результат:"+ res);
     }
-    public static int findNumber(int[] arr) {
+    private static int findNumber(int[] arr) {
         int max = -1;
         for (int i = 0; i < arr.length; i++) {
             int count = 0;

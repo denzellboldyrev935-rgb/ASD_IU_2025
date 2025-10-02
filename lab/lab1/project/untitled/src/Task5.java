@@ -17,7 +17,7 @@ public class Task5 {
             System.out.println("Слово не является изограммой");
         }
     }
-    public static boolean ifIsogram(String word){
+    private static boolean ifIsogram(String word){
         word = word.toLowerCase();
         if(word.isEmpty()){
            return true;
@@ -33,7 +33,6 @@ public class Task5 {
                 return false;
             }
             arr[ind] = true;
-
         }
         return true;
     }

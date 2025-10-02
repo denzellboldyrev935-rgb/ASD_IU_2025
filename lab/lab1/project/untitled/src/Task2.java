@@ -9,7 +9,19 @@
 import java.util.Scanner;
 
 public class Task2{
-    public static String convert(int n, int m) {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Число N (в 10-ой): ");
+        int n = sc.nextInt();
+
+        System.out.print("Основание M (от 2 до 9): ");
+        int m = sc.nextInt();
+
+        String result = convert(n, m);
+        System.out.println("Результат: " + result);
+    }
+    private static String convert(int n, int m) {
         if (m < 2 || m > 9) {
             return "Основание должно быть от 2 до 9";
         }
@@ -24,17 +36,5 @@ public class Task2{
             number = number / m;
         }
         return result;
-    }
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        System.out.print("Введите число N (в десятичной системе): ");
-        int n = sc.nextInt();
-
-        System.out.print("Введите основание M (от 2 до 9): ");
-        int m = sc.nextInt();
-
-        String result = convert(n, m);
-        System.out.println("Результат: " + result);
     }
 }
