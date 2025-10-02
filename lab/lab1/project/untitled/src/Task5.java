@@ -7,6 +7,16 @@
 import java.util.Locale;
 import  java.util.Scanner;
 public class Task5 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Введите слово: ");
+        String word = sc.nextLine();
+        if (ifIsogram(word)) {
+            System.out.println("Слово является изограммой");
+        } else {
+            System.out.println("Слово не является изограммой");
+        }
+    }
     public static boolean ifIsogram(String word){
         word = word.toLowerCase();
         if(word.isEmpty()){
@@ -27,15 +37,4 @@ public class Task5 {
         }
         return true;
     }
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Введите слово: ");
-        String word = sc.nextLine();
-        if (ifIsogram(word)) {
-            System.out.println("Слово является изограммой");
-        } else {
-            System.out.println("Слово не является изограммой");
-        }
-    }
-
 }

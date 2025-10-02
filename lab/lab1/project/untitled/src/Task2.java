@@ -11,7 +11,7 @@ import java.util.Scanner;
 public class Task2{
     public static String convert(int n, int m) {
         if (m < 2 || m > 9) {
-            return "Ошибка: основание должно быть от 2 до 9";
+            return "Основание должно быть от 2 до 9";
         }
         if (n == 0) {
             return "0";
