@@ -11,13 +11,13 @@ public class Task5 {
         Scanner sc = new Scanner(System.in);
         System.out.print("Введите слово: ");
         String word = sc.nextLine();
-        if (ifIsogram(word)) {
+        if (isIsogram(word)) {
             System.out.println("Слово является изограммой");
         } else {
             System.out.println("Слово не является изограммой");
         }
     }
-    private static boolean ifIsogram(String word){
+    private static boolean isIsogram(String word){
         word = word.toLowerCase();
         if(word.isEmpty()){
            return true;
@@ -33,3 +33,4 @@ public class Task5 {
         return true;
     }
 }
+
